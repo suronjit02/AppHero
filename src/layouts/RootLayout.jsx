@@ -9,10 +9,10 @@ const RootLayout = () => {
 
             <Navbar />
 
-            <main className="min-h-[calc(100vh-185px)]">
+            <main className="min-h-[calc(100vh-220px)] flex-1 pt-16">
 
                 <Outlet />
-                
+
             </main>
 
             <Footer />
