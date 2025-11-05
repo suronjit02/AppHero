@@ -23,7 +23,7 @@ const Navbar = () => {
 
                 <Link to='/' className="flex items-center gap-2 text-xl font-bold text-sky-600">
                     <img className="h-10" src={logo} alt="AppHero logo" />
-                    AppHero
+                    <span className='hidden sm:inline-block'>AppHero</span>
                 </Link>
 
 
@@ -47,7 +47,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className="btn btn-wide bg-linear-to-r from-blue-500 to-sky-700 text-white"> <span className='text-xl'><FaGithub /></span> Contribute</button>
+                <Link to={"https://github.com/suronjit02"} target='_blank' className="btn btn-wide bg-linear-to-r from-blue-500 to-sky-700 text-white"> <span className='text-xl'><FaGithub /></span> Contribute</Link>
             </div>
         </div>
     );
