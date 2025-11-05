@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "/src/assets/Spotify.png",
+        "image": "/assets/Spotify.png",
         "name": "Sportify",
         "companyName": "AudioTech",
         "description": "Sportify is a music streaming app that allows users to listen to millions of songs and podcasts. Users can create playlists, follow artists, discover new music based on personalized recommendations, and share favorite tracks with friends. The app offers offline listening, high-quality audio, and daily curated playlists to suit every mood and activity. With collaborative playlists, social features, and seamless integration across devices, Sportify ensures an immersive audio experience for casual listeners and music enthusiasts alike, making it easy to explore and enjoy music anytime, anywhere.",
@@ -34,7 +34,7 @@
     },
     {
         "id": 2,
-        "image": "/src/assets/Facebook.png",
+        "image": "/assets/Facebook.png",
         "name": "Facebook",
         "companyName": "Meta Inc.",
         "description": "FaceBook is a social media platform that connects people worldwide. Users can create profiles, share updates, photos, and videos, join groups, and interact with friends and family. The app allows users to follow pages, receive notifications about events, and participate in discussions. With privacy settings, messaging, and marketplace features, FaceBook provides a complete social networking experience. Users can stay informed, discover communities, and share meaningful content while maintaining connections across the globe, making it one of the most widely used and versatile social platforms.",
@@ -67,7 +67,7 @@
     },
     {
         "id": 3,
-        "image": "/src/assets/WhatsApp.png",
+        "image": "/assets/WhatsApp.png",
         "name": "WhatsApp",
         "companyName": "Meta Inc.",
         "description": "WhatsApp is a messaging app that allows users to send text messages, voice notes, images, videos, and documents securely and instantly. Users can create group chats, make voice and video calls, and share their status updates. With end-to-end encryption, WhatsApp ensures privacy for all communications. The app supports cross-device usage, backup options, and easy contact management. It is widely used globally for personal and business communication, providing a fast, reliable, and convenient way to stay connected with friends, family, and colleagues.",
@@ -100,7 +100,7 @@
     },
     {
         "id": 4,
-        "image": "/src/assets/Instagram.png",
+        "image": "/assets/Instagram.png",
         "name": "Instagram",
         "companyName": "PhotoSoft",
         "description": "InstaPic is a photo-sharing app where users can upload, edit, and share photos and short videos with their followers. The app features filters, stickers, and creative tools to enhance content. Users can like, comment, and save posts, as well as explore trending content through the Discover page. With stories, reels, and IGTV features, InstaPic allows for real-time sharing and interaction. The app is ideal for creatives and influencers to express themselves visually, stay connected, and build a personal brand online.",
@@ -133,7 +133,7 @@
     },
     {
         "id": 5,
-        "image": "/src/assets/youstream.jpg",
+        "image": "/assets/youstream.jpg",
         "name": "YouStream",
         "companyName": "VideoTech",
         "description": "YouStream is a video streaming platform offering a wide range of movies, TV shows, and user-generated content. Users can subscribe to channels, create playlists, and receive recommendations based on viewing history. The app supports HD streaming, offline downloads, and personalized watchlists. Interactive features like comments, likes, and sharing enable community engagement. YouStream provides a seamless and entertaining video experience, catering to diverse interests, from educational content to entertainment, ensuring viewers enjoy a rich multimedia environment anytime, anywhere.",
@@ -166,7 +166,7 @@
     },
     {
         "id": 6,
-        "image": "/src/assets/Gmail.png",
+        "image": "/assets/Gmail.png",
         "name": "GMail",
         "companyName": "Google Inc.",
         "description": "GMail is an email service app that allows users to send and receive emails quickly and securely. Users can organize inboxes, create labels, filter messages, and schedule emails. Integrated search and smart suggestions make email management effortless. The app supports attachments, conversation threads, and offline access. With strong security features, two-factor authentication, and spam filtering, GMail ensures safe and reliable communication for personal and business purposes. Seamless integration with Google Workspace tools and calendar features enhances productivity and collaboration.",
@@ -199,7 +199,7 @@
     },
     {
         "id": 7,
-        "image": "/src/assets/Tiktok.png",
+        "image": "/assets/Tiktok.png",
         "name": "TikTok",
         "companyName": "ByteDance",
         "description": "TikTok is a short-video platform that allows users to create, share, and discover videos up to a few minutes long. The app features editing tools, music overlays, filters, and effects to enhance creativity. Users can like, comment, follow, and share content, and participate in trending challenges. The app offers personalized feeds based on user interests and interactions. TikTok is widely used for entertainment, learning, and social engagement, providing a fun and interactive space for creators and viewers to express themselves and enjoy viral content worldwide.",
@@ -232,7 +232,7 @@
     },
     {
         "id": 8,
-        "image": "/src/assets/Twitter.png",
+        "image": "/assets/Twitter.png",
         "name": "Twitter",
         "companyName": "Twitter Inc.",
         "description": "Twitter is a social media platform designed for real-time news, updates, and public conversations. Users can post tweets, retweet, like, and reply. Hashtags, trending topics, and lists help users discover relevant content. Twitter supports multimedia attachments, polls, and threads for storytelling. The app is widely used by individuals, brands, and organizations to share information, connect with audiences, and engage in discussions globally. Twitter provides a fast, interactive, and dynamic way to follow interests, news, and social movements in real time.",
@@ -265,7 +265,7 @@
     },
     {
         "id": 9,
-        "image": "/src/assets/Meet.png",
+        "image": "/assets/Meet.png",
         "name": "Meet",
         "companyName": "Meet",
         "description": "Zoom is a video conferencing app that enables users to host and join virtual meetings, webinars, and collaboration sessions. The app supports HD video and audio, screen sharing, chat, and meeting recording. Users can schedule meetings, invite participants, and use breakout rooms for group discussions. Zoom integrates with calendars and other productivity tools, providing an efficient remote communication platform. It is widely adopted by businesses, educators, and individuals for work, learning, and social interactions, making remote collaboration seamless and effective.",
@@ -298,7 +298,7 @@
     },
     {
         "id": 10,
-        "image": "/src/assets/LinkedIn.png",
+        "image": "/assets/LinkedIn.png",
         "name": "LinkedIn",
         "companyName": "Microsoft",
         "description": "LinkedIn is a professional networking platform that allows users to create profiles, connect with colleagues, and follow companies. Users can share professional updates, post jobs, apply for opportunities, and participate in discussions. The app offers learning courses, endorsements, and skill assessments. LinkedIn is used by professionals, recruiters, and organizations to build networks, showcase expertise, and discover career opportunities. It provides a space for professional growth, learning, and industry engagement in a secure and interactive environment.",
@@ -331,7 +331,7 @@
     },
     {
         "id": 11,
-        "image": "/src/assets/SnapChat.jpg",
+        "image": "/assets/SnapChat.jpg",
         "name": "SnapChat",
         "companyName": "Snap Inc.",
         "description": "SnapChat is a multimedia messaging app that allows users to send disappearing photos and videos called Snaps. Users can add text, filters, stickers, and AR effects to enhance content. The app features Stories, chat, and Discover to explore news and entertainment. SnapChat promotes visual storytelling and private sharing while offering fun, creative tools for self-expression. Users can communicate with friends and communities globally, sharing short-lived but engaging content that disappears automatically, making it an interactive social experience.",
@@ -364,7 +364,7 @@
     },
     {
         "id": 12,
-        "image": "/src/assets/Pinterest.png",
+        "image": "/assets/Pinterest.png",
         "name": "Pinterest",
         "companyName": "Pinterest Inc.",
         "description": "Pinterest is an image sharing and discovery app that allows users to explore ideas for interests, hobbies, and projects. Users can create boards, save pins, and organize content visually. The app offers personalized recommendations and trending topics. Pinterest is used for inspiration in areas like fashion, home decor, DIY, cooking, and travel. It encourages creativity, planning, and sharing of ideas in a visually appealing and interactive platform that connects people with the content they love and want to explore.",
@@ -397,7 +397,7 @@
     },
     {
         "id": 13,
-        "image": "/src/assets/Reddit.png",
+        "image": "/assets/Reddit.png",
         "name": "Reddit",
         "companyName": "Reddit Inc.",
         "description": "Reddit is a social news aggregation and discussion platform. Users can submit posts, comment, and vote on content. The app features communities called subreddits covering a vast range of topics. Reddit supports text, images, videos, and links, encouraging discussions and sharing of knowledge. Users can follow communities of interest, participate in discussions, and engage with content through upvotes and downvotes. Reddit is widely used for news, entertainment, learning, and connecting with like-minded individuals, offering a democratic platform for ideas and conversations.",
@@ -430,7 +430,7 @@
     },
     {
         "id": 14,
-        "image": "/src/assets/Spotify.png",
+        "image": "/assets/Spotify.png",
         "name": "Spotify Kids",
         "companyName": "AudioTech",
         "description": "Spotify Kids is a child-friendly music streaming app designed for younger listeners. It offers a safe environment with curated playlists, sing-along songs, educational content, and stories. Parents can control content, set limits, and monitor listening activity. The app encourages music exploration, creativity, and learning through fun audio experiences. With engaging characters, interactive features, and age-appropriate content, Spotify Kids provides an immersive music experience tailored for children while keeping it safe and entertaining for the family.",
@@ -463,7 +463,7 @@
     },
     {
         "id": 15,
-        "image": "/src/assets/telegram.png",
+        "image": "/assets/telegram.png",
         "name": "Telegram",
         "companyName": "Telegram LLC",
         "description": "Telegram is a messaging app focused on speed, privacy, and security. Users can send messages, media, and files instantly, create groups and channels, and use secret chats with end-to-end encryption. The app supports bots, stickers, and cross-platform synchronization. Telegram allows for secure, fast, and efficient communication, suitable for personal and professional use. It also offers cloud storage, large file sharing, and multiple account management. Telegram is widely used globally for private messaging, broadcasting content, and collaborating in groups efficiently and safely.",
@@ -496,7 +496,7 @@
     },
     {
         "id": 16,
-        "image": "/src/assets/Google_Maps.png",
+        "image": "/assets/Google_Maps.png",
         "name": "Google Maps",
         "companyName": "Google Inc.",
         "description": "Google Maps is a navigation and mapping app that provides real-time GPS directions, traffic updates, and local business information. Users can explore locations, view street maps, satellite imagery, and find routes for driving, walking, cycling, or public transit. The app includes reviews, photos, and ratings for places, helping users discover restaurants, hotels, and attractions. Google Maps integrates with other Google services, supports offline maps, and offers location sharing. It is essential for travel planning, navigation, and exploring cities with accurate and up-to-date information.",
@@ -529,7 +529,7 @@
     },
     {
         "id": 17,
-        "image": "/src/assets/Netflix-icon.png",
+        "image": "/assets/Netflix-icon.png",
         "name": "Netflix",
         "companyName": "Netflix Inc.",
         "description": "Netflix is a video streaming platform offering movies, series, documentaries, and original content. Users can create profiles, curate watchlists, rate content, and receive personalized recommendations. The app supports HD and 4K streaming, offline downloads, and multi-device access. Interactive features include subtitles, language selection, and parental controls. Netflix provides entertainment across genres, catering to diverse audiences. It ensures high-quality content delivery, smooth streaming experience, and an engaging interface, making it one of the leading platforms for video-on-demand entertainment worldwide.",
@@ -562,7 +562,7 @@
     },
     {
         "id": 18,
-        "image": "/src/assets/Duolingo_logo.png",
+        "image": "/assets/Duolingo_logo.png",
         "name": "Duolingo",
         "companyName": "Duolingo Inc.",
         "description": "Duolingo is a language learning app that provides interactive lessons, games, quizzes, and practice exercises for learners of all ages. Users can learn multiple languages, track progress, and receive rewards for achievements. The app employs gamification techniques to make learning fun and engaging, offering listening, speaking, reading, and writing exercises. Duolingo supports offline learning and personalized lesson plans. It is ideal for individuals looking to acquire new languages efficiently while staying motivated through a fun and structured learning experience.",
@@ -595,7 +595,7 @@
     },
     {
         "id": 19,
-        "image": "/src/assets/snapseed.png",
+        "image": "/assets/snapseed.png",
         "name": "Snapseed",
         "companyName": "Google Inc.",
         "description": "Snapseed is a photo-editing app offering professional-level editing tools for mobile users. Users can enhance images, apply filters, adjust brightness, contrast, and saturation, and use advanced tools like selective adjustments and healing. Snapseed supports RAW image editing and non-destructive workflow. The app is suitable for photographers, creatives, and casual users who want high-quality edits on the go. With its intuitive interface, wide range of tools, and flexible features, Snapseed makes photo editing easy, powerful, and accessible.",
@@ -628,7 +628,7 @@
     },
     {
         "id": 20,
-        "image": "/src/assets/Slack_icon.png",
+        "image": "/assets/Slack_icon.png",
         "name": "Slack",
         "companyName": "Slack Technologies",
         "description": "Slack is a team collaboration app that enables real-time messaging, file sharing, and project management. Users can create channels, direct messages, and integrate apps to streamline workflows. The app supports notifications, search, and organization tools to enhance productivity. Slack is ideal for remote teams, businesses, and organizations to communicate efficiently, collaborate on projects, and maintain a centralized workspace. With integrations, bots, and automation features, Slack provides an effective platform for teamwork, task management, and professional communication.",

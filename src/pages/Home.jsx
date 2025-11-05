@@ -1,6 +1,6 @@
 import { FaGooglePlay, FaStar } from 'react-icons/fa';
 import { FaAppStoreIos } from 'react-icons/fa';
-import heroImg from '../assets/hero.png';
+import heroImg from '/assets/hero.png';
 import { useNavigate, useOutletContext } from 'react-router';
 import { AiOutlineDownload } from 'react-icons/ai';
 

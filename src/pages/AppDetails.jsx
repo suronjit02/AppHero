@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useOutletContext, useParams } from "react-router";
 import { toast } from "react-toastify";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
-import downloadImg from '../assets/icon-downloads.png';
-import reviewImg from '../assets/icon-review.png';
-import ratingImg from '../assets/icon-ratings.png';
+import downloadImg from '/assets/icon-downloads.png';
+import reviewImg from '/assets/icon-review.png';
+import ratingImg from '/assets/icon-ratings.png';
 
 
 const AppDetails = () => {
