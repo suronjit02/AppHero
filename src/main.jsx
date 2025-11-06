@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router'
@@ -8,6 +8,7 @@ import MyInstallation from './pages/MyInstallation.jsx'
 import RootLayout from './layouts/RootLayout.jsx'
 import AppDetails from './pages/AppDetails.jsx'
 import NotFound from './pages/NotFound.jsx'
+import Loader from './components/Loader.jsx'
 
 const router = createBrowserRouter([
 
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} fallbackElement={<div>Loading...</div>} />
+    
+    <Suspense fallback={<Loader />}>
+      <RouterProvider router={router} fallbackElement={<Loader />} />
+    </Suspense>
+    
   </StrictMode>,
-)
+);

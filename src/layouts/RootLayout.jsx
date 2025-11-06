@@ -1,12 +1,18 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { Outlet, useLoaderData } from 'react-router';
+import { Outlet, useLoaderData, useNavigation } from 'react-router';
 import { ToastContainer } from 'react-toastify';
+import Loader from '../components/Loader';
 
 const RootLayout = () => {
 
     const apps = useLoaderData();
+    const navigation = useNavigation();
+
+    if (navigation.state === "loading") {
+        return <Loader />;
+    }
 
     return (
         <div>
