@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router';
 import logo from '/assets/logo.png';
-import { FaGithub } from 'react-icons/fa';
+import { FaAppStoreIos, FaGithub } from 'react-icons/fa';
+import { IoHomeOutline } from 'react-icons/io5';
+import { RiInstallFill } from 'react-icons/ri';
 
 const Navbar = () => {
     return (
         <div className="navbar bg-base-100 shadow-sm fixed top-0 left-0 z-50 sm:px-20">
+            
             <div className="navbar-start">
 
                 <div className="dropdown">
@@ -26,24 +29,25 @@ const Navbar = () => {
                     <span className='hidden sm:inline-block'>AppHero</span>
                 </Link>
 
-
-            </div>            <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+            </div>
+            
+            <div className="navbar-center hidden lg:flex">
+                <ul className="menu menu-horizontal px-1 font-semibold">
                     <li><NavLink className={({ isActive }) =>
                         isActive
                             ? "text-sky-600 border-b-2 border-sky-600"
                             : "text-gray-600 hover:text-sky-500"
-                    } to="/">Home</NavLink></li>
+                    } to="/"><IoHomeOutline />Home</NavLink></li>
                     <li><NavLink className={({ isActive }) =>
                         isActive
                             ? "text-sky-600 border-b-2 border-sky-600"
                             : "text-gray-600 hover:text-sky-500"
-                    } to="/apps">Apps</NavLink></li>
+                    } to="/apps"><FaAppStoreIos />Apps</NavLink></li>
                     <li><NavLink className={({ isActive }) =>
                         isActive
                             ? "text-sky-600 border-b-2 border-sky-600"
                             : "text-gray-600 hover:text-sky-500"
-                    } to="/installation">Installation</NavLink></li>
+                    } to="/installation"><RiInstallFill />Installation</NavLink></li>
                 </ul>
             </div>
             <div className="navbar-end">

@@ -3,6 +3,7 @@ import { FaAppStoreIos } from 'react-icons/fa';
 import heroImg from '/assets/hero.png';
 import { useNavigate, useOutletContext } from 'react-router';
 import { AiOutlineDownload } from 'react-icons/ai';
+import { IoTrendingUpOutline } from 'react-icons/io5';
 
 const Home = () => {
 
@@ -98,7 +99,9 @@ const Home = () => {
             </div>
 
             <div className='bg-base-200 min-h-screen text-center pt-15 px-4 sm:px-8 md:px-16'>
-                <h3 className='text-3xl font-bold pb-3'>Trending Apps</h3>
+                
+                <h3 className='text-3xl font-bold pb-3 flex gap-2 justify-center'>Trending Apps<span className='font-bold text-4xl text-sky-400'><IoTrendingUpOutline /></span></h3>
+                
                 <p className='text-md font-semibold'>Explore All Trending Apps on the Market developed by us.</p>
 
                 <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto mt-10">
