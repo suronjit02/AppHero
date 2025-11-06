@@ -9,6 +9,7 @@ import RootLayout from './layouts/RootLayout.jsx'
 import AppDetails from './pages/AppDetails.jsx'
 import NotFound from './pages/NotFound.jsx'
 import Loader from './components/Loader.jsx'
+import AppNotFound from './pages/AppNotFound.jsx'
 
 const router = createBrowserRouter([
 

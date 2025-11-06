@@ -5,6 +5,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recha
 import downloadImg from '/assets/icon-downloads.png';
 import reviewImg from '/assets/icon-review.png';
 import ratingImg from '/assets/icon-ratings.png';
+import AppNotFound from "./AppNotFound";
 
 
 const AppDetails = () => {
@@ -29,6 +30,10 @@ const AppDetails = () => {
             toast.success("App Installed Successfully");
         }
     };
+
+
+    if (!app) return <AppNotFound />;
+
 
     return (
         
