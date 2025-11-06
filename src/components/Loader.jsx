@@ -1,23 +1,17 @@
-import React from "react";
+import React from 'react';
+import heroImg from '/assets/logo.png';
 
-const Loader = () => (
-    <div className="flex justify-center items-center h-screen bg-base-200">
-        <span className="loading loading-spinner text-error"></span>
-        <div className="card bg-base-100 w-96 shadow-sm">
-            <figure>
-                <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes" />
-            </figure>
-            <div className="card-body">
-                <h2 className="card-title">Card Title</h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
-                </div>
-            </div>
+const Loader = () => {
+
+    console.log('page navigate')
+    
+    return (
+        <div className="flex justify-center items-center h-screen bg-base-200">
+
+            <h3 className="text-5xl flex justify-center items-center font-bold text-gray-500">L <span><img className='h-10 animate-spin black' src={heroImg} alt="" /></span> ading...</h3>
+
         </div>
-    </div>
-);
+    );
+};
 
 export default Loader;

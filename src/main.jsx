@@ -15,6 +15,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     Component: RootLayout,
+    hydrateFallbackElement: <Loader />,
     loader: async () => {
       const res = await fetch("/apps.json");
       return res.json();
@@ -54,10 +55,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    
-    <Suspense fallback={<Loader />}>
-      <RouterProvider router={router} fallbackElement={<Loader />} />
-    </Suspense>
-    
+
+    <RouterProvider router={router} />
+
   </StrictMode>,
 );

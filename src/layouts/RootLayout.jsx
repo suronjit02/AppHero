@@ -5,25 +5,26 @@ import { Outlet, useLoaderData, useNavigation } from 'react-router';
 import { ToastContainer } from 'react-toastify';
 import Loader from '../components/Loader';
 
+
 const RootLayout = () => {
 
     const apps = useLoaderData();
     const navigation = useNavigation();
-
-    if (navigation.state === "loading") {
-        return <Loader />;
-    }
 
     return (
         <div>
 
             <Navbar />
 
-            <main className="min-h-[calc(100vh-220px)] flex-1 pt-16">
+            {
+                navigation?.state === 'loading' ? (<Loader />) :
+                    (<main className="min-h-[calc(100vh-220px)] flex-1 pt-16">
 
-                <Outlet context={{ apps }} />
+                        <Outlet context={{ apps }} />
 
-            </main>
+                    </main>
+                    )
+            }
 
             <Footer />
 

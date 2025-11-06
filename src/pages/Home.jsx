@@ -10,7 +10,6 @@ const Home = () => {
     const navigate = useNavigate();
     const { apps } = useOutletContext();
 
-    console.log(apps);
 
     return (
         <>
