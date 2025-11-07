@@ -18,7 +18,7 @@ const Home = () => {
                 <div className="text-center pt-10 sm:pt-20 md:pt-30">
                     <div className="max-w-2xl">
 
-                        <h1 className="text-7xl font-bold leading-[1.2]
+                        <h1 className="text-4xl sm:text-7xl font-bold leading-[1.2]
                         "><span className='text-[#001931]'>We Build</span>
                             <br />
 
@@ -29,7 +29,7 @@ const Home = () => {
                             At <span className='text-sky-700'>App Hero</span>, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact.
                         </p>
 
-                        <div className='flex gap-5 justify-center items-center'>
+                        <div className='flex flex-col sm:flex-row gap-5 justify-center items-center'>
 
                             <button className="btn btn-outline btn-accent text-lg p-6 font-bold">
                                 <a
@@ -62,7 +62,7 @@ const Home = () => {
                             <img
                                 src={heroImg}
                                 alt="Hero"
-                                className="w-[300px] md:w-[500px] lg:w-[900px] "
+                                className="w-full max-w-[900px] mx-auto "
                             />
 
                         </div>
@@ -74,7 +74,7 @@ const Home = () => {
 
                 <h3 className='text-3xl font-bold pb-5'>Trusted by Millions, Built for You</h3>
 
-                <div className="stats stats-vertical sm:stats-horizontal shadow w-full px-4 sm:px-8 md:px-16">
+                <div className="stats stats-vertical sm:stats-horizontal w-full px-4 sm:px-8 md:px-16 py-10">
 
                     <div className="stat place-items-center">
                         <div className="stat-title text-md font-semibold">Total Downloads</div>
@@ -103,7 +103,7 @@ const Home = () => {
                 
                 <p className='text-md font-semibold'>Explore All Trending Apps on the Market developed by us.</p>
 
-                <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto mt-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto mt-10">
 
                     {apps.slice(0, 8).map(app => (
                         <div onClick={() => navigate(`/app/${app.id}`)}
