@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const AllApps = () => {
 
+    const [searching, setSearching] = useState(false);
     const [search, setSearch] = useState("");
     const navigate = useNavigate();
     const apps = useRouteLoaderData("apps");
@@ -34,13 +35,24 @@ const AllApps = () => {
                 <input
                     type="text"
                     placeholder="Search apps by name..."
-                    className="input input-bordered w-full md:w-80"
+                    className="input input-bordered w-full md:w-80 focus:border-accent focus:outline-none"
                     value={search}
-                    onChange={(e) => setSearch(e.target.value)}
+
+                    onChange={(e) => {
+                        setSearch(e.target.value);
+                        setSearching(true);
+
+                        setTimeout(() => {
+                            setSearching(false);
+                        }, 400);
+                    }}
+
                 />
             </div>
 
-            {filteredApps.length > 0 ? (
+            {searching ? (
+                <p className="font-semibold text-2xl text-gray-500 flex justify-center mt-20">Searching...</p>
+            ) : filteredApps.length > 0 ? (
 
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
 
