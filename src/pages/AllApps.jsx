@@ -1,4 +1,4 @@
-import { useNavigate, useOutletContext } from "react-router";
+import { useRouteLoaderData, useNavigate, } from "react-router";
 import { AiOutlineDownload } from "react-icons/ai";
 import { FaStar } from "react-icons/fa";
 import { useState } from "react";
@@ -7,7 +7,7 @@ const AllApps = () => {
 
     const [search, setSearch] = useState("");
     const navigate = useNavigate();
-    const { apps } = useOutletContext();
+    const apps = useRouteLoaderData("apps");
 
     const filteredApps = apps.filter((app) =>
         app.name?.toLowerCase().includes(search.toLowerCase())
@@ -43,15 +43,15 @@ const AllApps = () => {
             {filteredApps.length > 0 ? (
 
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-                   
+
                     {filteredApps.map((app) => (
-                        
+
                         <div
                             key={app.id}
                             onClick={() => navigate(`/app/${app.id}`)}
                             className="card bg-base-100 shadow-md hover:shadow-xl transition duration-200 cursor-pointer">
                             <figure>
-                                <img src={app.image} alt={app.name} className="h-40 mt-5 object-cover"/>
+                                <img src={app.image} alt={app.name} className="h-40 mt-5 object-cover" />
                             </figure>
 
                             <div className="card-body">

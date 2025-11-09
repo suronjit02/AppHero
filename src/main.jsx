@@ -1,4 +1,4 @@
-import { StrictMode, Suspense } from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router'
@@ -7,13 +7,13 @@ import AllApps from './pages/AllApps.jsx'
 import MyInstallation from './pages/MyInstallation.jsx'
 import RootLayout from './layouts/RootLayout.jsx'
 import AppDetails from './pages/AppDetails.jsx'
-import NotFound from './pages/NotFound.jsx'
+import PageNotFound from './pages/PageNotFound.jsx'
 import Loader from './components/Loader.jsx'
-import AppNotFound from './pages/AppNotFound.jsx'
 
 const router = createBrowserRouter([
 
   {
+    id: "apps",
     path: '/',
     Component: RootLayout,
     hydrateFallbackElement: <Loader />,
@@ -27,26 +27,31 @@ const router = createBrowserRouter([
       {
         path: '/',
         Component: Home,
+        loader: () => fetch("/apps.json")
       },
       {
         path: '/home',
         Component: Home,
+        loader: () => fetch("/apps.json")
       },
       {
-        path: '/apps',
+        path: '/apps', 
         Component: AllApps,
+        loader: () => fetch("/apps.json")
       },
       {
         path: '/installation',
         Component: MyInstallation,
+        loader: () => fetch("/apps.json")
       },
       {
         path: '/app/:id',
         Component: AppDetails,
+        loader: () => fetch("/apps.json")
       },
       {
         path: "*",
-        Component: NotFound,
+        Component: PageNotFound,
       },
 
     ]
@@ -55,9 +60,9 @@ const router = createBrowserRouter([
 ])
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+    <StrictMode>
 
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
 
-  </StrictMode>,
+    </StrictMode>
 );

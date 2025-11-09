@@ -2,14 +2,14 @@ import React from "react";
 import { AiOutlineDownload } from 'react-icons/ai';
 import { FaStar } from 'react-icons/fa';
 import { MdKeyboardArrowDown } from 'react-icons/md';
-import { useOutletContext } from "react-router";
+import {  useRouteLoaderData, } from "react-router";
 import { toast } from "react-toastify";
 
 
 
 const MyInstallation = () => {
 
-    const { apps } = useOutletContext();
+    const  apps  = useRouteLoaderData("apps");
     const [sortOrder, setSortOrder] = React.useState(() => localStorage.getItem("installedSortOrder") || "high");
 
     const [installedApps, setInstalledApps] = React.useState(() => {

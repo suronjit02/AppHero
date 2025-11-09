@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useOutletContext, useParams } from "react-router";
+import { useParams, useRouteLoaderData } from "react-router";
 import { toast } from "react-toastify";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import downloadImg from '/assets/icon-downloads.png';
@@ -10,18 +10,21 @@ import AppNotFound from "./AppNotFound";
 
 const AppDetails = () => {
     const { id } = useParams();
-    const { apps } = useOutletContext();
+    const  apps  = useRouteLoaderData("apps");
 
     const [installed, setInstalled] = useState(() => {
         const installedApps = JSON.parse(localStorage.getItem("installedApps")) || [];
-        return installedApps.some(a => a.id === parseInt(id));
+        return installedApps.some(app => app.id === parseInt(id));
     });
 
     const app = apps.find(app => app.id === parseInt(id));
 
     const handleInstall = () => {
+       
         if (!app) return;
+       
         const installedApps = JSON.parse(localStorage.getItem("installedApps")) || [];
+      
         if (!installedApps.some(a => a.id === app.id)) {
             installedApps.push({ id: app.id });
             localStorage.setItem("installedApps", JSON.stringify(installedApps));
