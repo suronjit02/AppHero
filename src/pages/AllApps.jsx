@@ -82,7 +82,7 @@ const AllApps = () => {
                     ))}
                 </div>
             ) : (
-                <p className="text-center text-gray-500 text-lg mt-10">No App Found 😕</p>
+                <p className="text-center text-gray-500 text-xl mt-10 font-semibold">No App Found.</p>
             )}
         </div>
     );

@@ -10,7 +10,7 @@ import AppNotFound from "./AppNotFound";
 
 const AppDetails = () => {
     const { id } = useParams();
-    const  apps  = useRouteLoaderData("apps");
+    const apps = useRouteLoaderData("apps");
 
     const [installed, setInstalled] = useState(() => {
         const installedApps = JSON.parse(localStorage.getItem("installedApps")) || [];
@@ -20,11 +20,11 @@ const AppDetails = () => {
     const app = apps.find(app => app.id === parseInt(id));
 
     const handleInstall = () => {
-       
+
         if (!app) return;
-       
+
         const installedApps = JSON.parse(localStorage.getItem("installedApps")) || [];
-      
+
         if (!installedApps.some(a => a.id === app.id)) {
             installedApps.push({ id: app.id });
             localStorage.setItem("installedApps", JSON.stringify(installedApps));
@@ -39,10 +39,10 @@ const AppDetails = () => {
 
 
     return (
-        
+
         <div className="bg-base-200 min-h-screen py-10 px-10 md:px-40 max-w-full mx-auto">
             <div className="flex flex-col md:flex-row gap-6 mb-10">
-               
+
                 <img src={app.image} alt={app.name} className="w-full md:w-60 h-auto md:h-60 object-contain rounded-lg shadow p-5 bg-white" />
 
                 <div className="flex-1">
@@ -51,7 +51,7 @@ const AppDetails = () => {
 
                     <hr />
 
-                    <div className="flex justify-start gap-10 my-5">
+                    <div className="flex justify-start gap-5 sm:gap-10 my-5">
 
                         <div>
 
@@ -59,23 +59,23 @@ const AppDetails = () => {
 
                             <p className="my-2 font-semibold text-gray-500">Downloads</p>
 
-                            <p className="text-3xl font-extrabold">{app.downloads ? app.downloads.toLocaleString() : 0}M</p>
+                            <p className="text-xl sm:text-3xl font-extrabold">{app.downloads ? app.downloads.toLocaleString() : 0}M</p>
 
-                       </div>
+                        </div>
 
                         <div>
                             <img src={ratingImg} alt="rating" />
                             <p className="my-2 font-semibold text-gray-500">Average Rating</p>
-                            <p className="text-3xl font-extrabold"> {app.ratingAvg ? app.ratingAvg.toFixed(1) : 0}</p>
+                            <p className="text-xl sm:text-3xl font-extrabold"> {app.ratingAvg ? app.ratingAvg.toFixed(1) : 0}</p>
                         </div>
-                        
+
                         <div>
                             <img src={reviewImg} alt="review" />
                             <p className="my-2 font-semibold text-gray-500">Reviews</p>
-                            <p className="text-3xl font-extrabold"> {app.reviews || 0}K</p>
-                       </div>
+                            <p className="text-xl sm:text-3xl font-extrabold"> {app.reviews || 0}K</p>
+                        </div>
 
-                        
+
 
                     </div>
 
@@ -90,19 +90,22 @@ const AppDetails = () => {
             </div>
 
             <div className="mb-10">
-                <h3 className="text-2xl font-semibold mb-4">App Reviews</h3>
-               
-                <ResponsiveContainer width="100%" height={250}>
-                   
-                    <BarChart data={app.ratings || []}>
-                        <XAxis dataKey="name" />
-                        <YAxis />
+                <h3 className="text-2xl font-semibold mb-4">App Rating</h3>
+
+                <ResponsiveContainer width="100%" minHeight={250}>
+                    <BarChart
+                        data={app.ratings || []} layout="vertical" barSize={18} >
+
+                        <YAxis dataKey="name" type="category" />
+                        <XAxis type="number" />
+
                         <Tooltip />
-                        <Bar dataKey="count" fill="#3b82f6" />
+
+                        <Bar dataKey="count" fill="#10b981" />
                     </BarChart>
-                    
                 </ResponsiveContainer>
             </div>
+
 
             <div>
                 <h3 className="text-2xl font-semibold mb-4">Description</h3>
